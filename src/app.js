@@ -4,6 +4,7 @@ const hbs = require('hbs')
 const find_weather = require('./utils/findweather')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //Definining paths for express
 const pubpath = path.join(__dirname, '../public')
@@ -83,6 +84,6 @@ app.get('*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
-    console.log("Server Started Boy!!")
+app.listen(port, () => {
+    console.log("Server Started On Port : "+ port )
 })
