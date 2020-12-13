@@ -1,6 +1,3 @@
-console.log("Client Side Loaded")
-
-
 const wform = document.querySelector('form')
 const search = document.querySelector('input')
 const heading = document.querySelector('#heading')
