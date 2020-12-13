@@ -25,6 +25,13 @@ h1 {
     font-size: 70px; 
 }
 
+.aboutp {
+    margin: 40px 0px 0px 30px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #503434; 
+}
+
 .aboutimg {
     margin: 40px 0px 0px 30px;
     border-radius: 30px;
