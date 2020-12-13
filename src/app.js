@@ -21,14 +21,14 @@ app.use(express.static(pubpath))
 app.get('', (req, res) =>{
     res.render('index',{
         title: 'Main Page',
-        name: 'Kunjaishu'
+        name: 'Ok'
     })
 })
 
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Kunjaishu'
+        name: 'Ok'
     })
 })
 
@@ -36,7 +36,7 @@ app.get('/help', (req, res) => {
     res.render('help',{
         title: 'Help',
         name: 'Kunjaishu',
-        message: 'Kunjaishuu for helpppp..'
+        message: 'Ok for helpppp..'
     })
 })
 
@@ -71,7 +71,7 @@ app.get('/help/*', (req, res) => {
     res.render('404',{
         title: 'HELP ERROR',
         message: "Help illa mwonee",
-        name: 'Kunjaishu'
+        name: 'Ok'
     })
 })
 
@@ -79,7 +79,7 @@ app.get('*', (req, res) => {
     res.render('404',{
         title: '404 ERROR',
         message: "Page not found",
-        name: 'Kunjaishu'
+        name: 'Ok'
     })
 })
 
