@@ -14,7 +14,8 @@ wform.addEventListener('submit', (e) => {
             heading.textContent = data.error
         else {
             heading.textContent = data.PlaceName
-            content.textContent = data.Summary
+            content.innerHTML = "Summary -> " + data.Summary + "<br/>" + "Curr_Temp. -> " + data.Curr_Temp +"<br/>" + "Max_Temp. -> " + 
+                                data.Max_Temp + "<br/>" + "Precipitation -> " + data.Precipitation
         }
     })  
 })
